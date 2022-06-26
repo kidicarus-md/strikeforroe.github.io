@@ -1,0 +1,25 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+{{ end }}
+
+{{ define "main" }}
+
+<div class="splash-container">
+  <div class="splash">
+    
+    <h1>{{ .Params.heading }}<span class="fancy">!</span></h1>
+    {{ if isset .Params "hashtag" }}
+    <a href="https://twitter.com/search?q=%23{{ .Params.hashtag }}&src=trend_click&vertical=trends">
+        <span class="handle">#{{ .Params.hashtag }}</span>
+    </a>    
+    {{ end }}
+    <h2>
+      {{ .Params.subheading }}
+    </h2>
+    <!-- Replace MEEEEE -->
+
+    {{ partial "social-icons.html" .}}
+  </div>
+</div>
+
+{{ end }}

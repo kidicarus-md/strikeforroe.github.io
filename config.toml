@@ -1,0 +1,22 @@
+baseURL = 'http://StrikeForRow.org/'
+languageCode = 'en-us'
+title = 'Strike For Row!'
+theme = "hugo-theme-codex"
+
+[params]
+reddit = "https://www.reddit.com/r/StrikeForRoe/"
+
+iconOrder = ["reddit"]
+
+
+[[menu.main]]
+  identifier = "about"
+  name = "Home"
+  title = "About"
+  url = "/"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "When?"
+  title = "Blog"
+  url = "/blog"
