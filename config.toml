@@ -1,4 +1,4 @@
-baseURL = 'https://strikeforroe.github.io/'
+baseURL = 'https://strikeforroe.org/'
 languageCode = 'en-us'
 title = 'StrikeForRoe'
 theme = "hugo-theme-codex"
