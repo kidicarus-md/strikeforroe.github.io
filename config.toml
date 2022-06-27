@@ -1,18 +1,19 @@
-baseURL = 'http://StrikeForRow.org/'
+baseURL = 'https://strikeforroe.github.io/'
 languageCode = 'en-us'
-title = 'Strike For Row!'
+title = 'StrikeForRoe'
 theme = "hugo-theme-codex"
 
 [params]
 reddit = "https://www.reddit.com/r/StrikeForRoe/"
+twitter = "https://twitter.com/search?q=%23StrikeForRoe&src=trend_click&vertical=trends"
 
-iconOrder = ["reddit"]
+iconOrder = ["reddit","twitter"]
 
 
 [[menu.main]]
   identifier = "about"
-  name = "Home"
-  title = "About"
+  name = "#StrikeForRoe"
+  title = "Strike For Roe!"
   url = "/"
 
 [[menu.main]]

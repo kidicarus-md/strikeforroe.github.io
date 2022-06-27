@@ -7,18 +7,15 @@
 <div class="splash-container">
   <div class="splash">
     
-    <h1>{{ .Params.heading }}<span class="fancy">!</span></h1>
-    {{ if isset .Params "hashtag" }}
-    <a href="https://twitter.com/search?q=%23{{ .Params.hashtag }}&src=trend_click&vertical=trends">
-        <span class="handle">#{{ .Params.hashtag }}</span>
-    </a>    
+    <h1><span class="fancy">#</span>{{ .Params.heading }}</h1>
+    {{ if isset .Params "subheading" }}
+    <span class="handle">{{ .Params.subheading }}</span>    
     {{ end }}
-    <h2>
-      {{ .Params.subheading }}
-    </h2>
+    
     <!-- Replace MEEEEE -->
 
     {{ partial "social-icons.html" .}}
+    {{.Content}}
   </div>
 </div>
 
